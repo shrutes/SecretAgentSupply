@@ -1,0 +1,259 @@
+body,
+html {
+  background-color: white;
+  font-family: Helvetica;
+  font-size: 18px;
+  color: white;
+}
+
+h1 {
+  background-color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: .66rem;
+  padding-bottom: .66rem;
+}
+
+h2 {
+  background-color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: .25rem;
+}
+
+h4{
+  font-size: 1rem;
+}
+
+.sitewrapper {
+  margin: 0 auto;
+}
+
+.topbannerwrapper {
+  background-color: black;
+}
+
+.topbanner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+.navwrapper {
+  background-color: firebrick;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.collapsednav {
+  display: none;
+}
+
+span {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.newarrivalwrapper {
+  height: 25rem;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  background-size: cover;
+}
+
+.newarrival {
+  position: relative;
+}
+
+.newarrivalbox {
+  background-color: black;
+  position: absolute;
+  top: 9rem;
+  width: 20rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+}
+
+.contentwrapper {
+ background-color: white;
+}
+
+.img {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.itemimg {
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemimg img {
+  max-width: 60%;
+  max-height: 100%;
+  margin-bottom: 2rem;
+}
+
+.imgitem {
+  width: 30%;
+  padding-top: 2rem;
+  border: 4px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imgtext {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.storeinfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.storeinfoitem {
+  width: 35%;
+  padding-bottom: 4rem;
+}
+
+.itemtitle {
+  background-color: black;
+  color: white;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+
+.itemvalue {
+  color: black;
+  line-height: 1.5rem;
+}
+
+.footer {
+  text-align: left;
+  height: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footerwrapper {
+  background-color: black;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width:1024px) {
+
+  .topbanner h1 {
+    font-size: .75rem;
+  }
+
+  .img {
+    flex-wrap: wrap;
+  }
+
+  .imgitem {
+    width: 47%;
+    margin-top: 1.5rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .collapsednav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width:960px) {
+    .container {
+      width: 100%;
+    }
+  }
+
+@media only screen and (max-width:470px) {
+
+  .newarrivalwrapper {
+    height: 15rem;
+  }
+
+  .newarrival {
+    position: relative;
+  }
+
+  .newarrivalbox {
+    margin: 0 auto;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 10rem;
+    padding-top: 1.5rem;
+    padding-left:2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .newarrivalbox h2 {
+    font-size: .77rem;
+  }
+
+  .newarrivalbox h3 {
+    font-size: 1rem;
+  }
+
+  .imgitem {
+    width: 90%;
+    margin-top: 1.5rem;
+  }
+
+  .img {
+    justify-content: center;
+  }
+
+  .storeinfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .storeinfoitem {
+    width: 90%;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+
+}
